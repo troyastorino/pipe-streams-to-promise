@@ -1,0 +1,37 @@
+{
+  "name": "pipe-streams-to-promise",
+  "version": "0.1.0",
+  "description": "Pipe an array of streams to a single promise. Captures errors on any of the streams.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troyastorino/pipe-streams-to-promise.git"
+  },
+  "keywords": [
+    "streams",
+    "node",
+    "promises",
+    "bluebird",
+    "js"
+  ],
+  "author": {
+    "name": "Troy Astorino",
+    "email": "troyastorino@gmail.com",
+    "url": "http://troyastorino.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/troyastorino/pipe-streams-to-promise/issues"
+  },
+  "homepage": "https://github.com/troyastorino/pipe-streams-to-promise",
+  "dependencies": {
+    "bluebird": "^2.9.13",
+    "stream-to-promise": "^1.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
