@@ -1,9 +1,9 @@
 # pipe-streams-to-promise
 Pipes an array of streams together and returns a promise. Checks for any errors on the steams.
 
-Heavily inspired by, and test cases take from,
-(epeli)[https://github.com/epeli]'s
-(promisePipe)[https://github.com/epeli/node-promisepipe]
+Heavily inspired by, and test cases taken from,
+[epeli](https://github.com/epeli)'s
+[promisePipe](https://github.com/epeli/node-promisepipe)
 
 ### Usage
 
