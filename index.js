@@ -10,7 +10,7 @@ var Bluebird = require("bluebird");
  *
  */
 var pipeStreams = function(streams) {
-  var finished = Bluebird.map(streams, function(stream, index, numStreams) {
+  var finished = Bluebird.all(streams.map(function(stream, index, numStreams) {
     return new Bluebird(function(resolve, reject){
       stream.on('error', function(streamErr) {
         var err = new Error(streamErr.message);
@@ -33,7 +33,7 @@ var pipeStreams = function(streams) {
         stream.on('finish', resolve);
       }
     });
-  });
+  }));
 
   // Pipe the streams together
   var destination = streams.reduce(function(readable, writeable) {

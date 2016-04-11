@@ -1,6 +1,6 @@
 {
   "name": "pipe-streams-to-promise",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pipe an array of streams to a single promise. Captures errors on any of the streams.",
   "main": "index.js",
   "scripts": {
